@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday ❤️</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background: linear-gradient(to right, pink, purple);
+        color: white;
+    }
+
+    .container {
+        margin-top: 100px;
+    }
+
+    h1 {
+        font-size: 50px;
+        animation: glow 2s infinite alternate;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 18px;
+        border: none;
+        border-radius: 20px;
+        background: white;
+        color: purple;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: pink;
+    }
+
+    @keyframes glow {
+        from { text-shadow: 0 0 10px white; }
+        to { text-shadow: 0 0 30px yellow; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Birthday ❤️</h1>
+    <p>You make my world brighter every day 💕</p>
+    <p>Wishing you love, joy, and endless smiles 😊</p>
+
+    <button onclick="playMusic()">Play Your Song 🎶</button>
+
+    <br><br>
+
+    <audio id="song">
+        <source src="C:\Users\Admin\Downloads\BASHH\Alex Warren - Ordinary (Official Video).mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+<script>
+function playMusic() {
+    document.getElementById("song").play();
+}
+</script>
+
+</body>
+</html>
